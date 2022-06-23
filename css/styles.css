@@ -96,14 +96,16 @@ p {
     text-align: center;
 }
 
-.encabezado {
+/*---FOOTER------*/
+.footer {
     background-color: rgb(52, 52, 128);
-    ;
+    height: 300px;
 
+    display: grid;
 
 }
 
-.encabezado__lista {
+.footer__lista {
     color: blanchedalmond;
 
     list-style-type: none;
