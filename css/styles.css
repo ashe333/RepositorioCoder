@@ -1,0 +1,190 @@
+/*------HEADER---------*/
+
+body {
+    background-color: darkseagreen;
+}
+
+header {
+    background-color: rgb(132, 132, 198);
+    border-color: black;
+    border-style: dotted;
+    
+
+    display: grid;
+    grid-template-columns: 1000px 500px;
+    grid-template-rows: 150px 80px;
+    grid-template-areas: "titulo logo" "menu menu";
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border: solid black 4px;
+    border-radius: 80px;
+    grid-area: logo;
+}
+
+#menu {
+    list-style-type: none;
+
+    background-color: dodgerblue;
+    border: solid 2px rgb(52, 52, 128);
+    width: 100%;
+    padding: 20px 15px 20px 15px;
+
+    display: flex;
+
+    flex-flow: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+
+    grid-area: menu;
+    justify-items: center;
+
+}
+
+.imgUno {
+    width: 800px;
+    height: 400px;
+    align-content: center;
+}
+
+@media (max-width: 480px) {
+    .header{
+        width: 300px;
+
+        background-color: rgb(50, 50, 119);
+        border-color: black;
+        border-style: dotted;
+    }
+    body{
+        background-color: rgb(21, 106, 61);
+
+    }
+    p{
+        text-align: center;
+        font-size: 15px;
+    }
+    
+}
+
+/*------INICIO------*/
+
+.titulo {
+    color: blueviolet;
+
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    grid-area: titulo;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.titulo__clinica {
+    text-align: left;
+    color: darkred;
+    font-size: 40px;
+}
+
+.titulo__clinica--somos {
+    font-size: 29px;
+    color: rgb(52, 52, 128);
+    text-align: center;
+}
+
+.encabezado {
+    background-color: rgb(52, 52, 128);
+    ;
+
+
+}
+
+.encabezado__lista {
+    color: blanchedalmond;
+
+    list-style-type: none;
+    text-shadow: none;
+}
+
+figure {
+    align-content: flex-start;
+}
+
+#h1 {
+    font-size: 40px;
+    color: rgb(46, 16, 106);
+
+}
+
+.articulo {
+    /*
+    border: solid 1px black;
+    background-color: rgb(132, 132, 198);
+    */
+    text-align: left;
+
+    display: grid;
+
+    grid-template-columns: 650px 650px;
+    grid-template-rows: 200px 200px;
+    column-gap: 5px;
+    row-gap: 5px;
+
+}
+
+.butonn {
+    width: 100px;
+    border: solid rgb(111, 20, 195);
+    border-radius: 25%;
+}
+
+.item {
+    background-color: rgb(195, 157, 230);
+    border: solid black;
+    display: grid;
+
+}
+.section {
+    display: flex;
+    flex-flow: column wrap;
+      
+}
+
+
+.clinicaVet{
+    width: 300px;
+    height: 400px;
+    border: solid black 5px;
+    border-radius: 80px;
+}
+.clinic{
+    text-align: right;
+
+}
+
+/*
+.articuloA {
+    border: solid black;
+    grid-area: articuloA;
+
+}
+
+.articuloB {
+    border: solid black;
+    grid-area: articuloB;
+}
+
+.articuloC {
+    border: solid black;
+    grid-area: articuloC;
+}
+
+.articuloD {
+    border: solid black;
+
+    grid-area: articuloD;
+} */
