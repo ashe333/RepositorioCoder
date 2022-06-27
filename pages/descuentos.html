@@ -1,66 +1,118 @@
 <!DOCTYPE html>
 <html>
-        <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width,initial-scale=1.0">
-            <title>Contacto</title>
-            <link rel="stylesheet" href="../css/styles.css" />
-        </head>
-        
-        <body>
-            <header class="header">
-                <main class="main">
-                    <h3 class="titulo">Veterinaria olmos</h3>
-                    <h1 class="titulo__clinica">Clinica veterinaria</h1>
-                    <br>
-                </main>
-                <figure>
-                    <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
-                </figure>
-        
-                    <nav class="nav">
-                        <ul id="menu">
-                            <a href="./pages/inicio.html">
-                                <li>Inico</li>
-                            </a>
-                            <a href="./pages/servicios.html">
-                                <li>Servicos</li>
-                            </a>
-                            <a href="./pages/sobrenosotros.html">
-                                <li>Sobre nosotros</li>
-                            </a>
-                            <a href="./pages/productos.html">
-                                <li>Productos</li>
-                            </a>
-                            <a href="./pages/contacto.html">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </nav>
-            </header>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <main class="main">
+            <h3 class="titulo">Veterinaria olmos</h3>
+            <h1 class="titulo__clinica">Clinica veterinaria</h1>
+            <br>
+        </main>
+        <figure>
+            <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
+        </figure>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     </head>
-        <h1>Completá el formulario y llevate un 10% de descuento!</h1>
-        <form action="" method="POST">
-            <label for="cliente">Nombre y apellido: </label>
-            <input type="text" id="cliente" name="name" value="ej." required><br></br>
-            <label for="contraseña">Email: </label>
-            <input type="text" id="contraseña" name="name" value="ejemplo@gmail.com" required><br><br>
-            <label for="mich">Nombre de la mascota: </label>
-            <input type="text" id="mich" name="name" value="ej. pochoclo" required>
-<br><br>
-           <fieldset>
+    <h1>Completá el formulario y llevate un 10% de descuento!</h1>
+    <form action="" method="POST">
+        <label for="cliente">Nombre y apellido: </label>
+        <input type="text" id="cliente" name="name" value="ej." required><br></br>
+        <label for="contraseña">Email: </label>
+        <input type="text" id="contraseña" name="name" value="ejemplo@gmail.com" required><br><br>
+        <label for="mich">Nombre de la mascota: </label>
+        <input type="text" id="mich" name="name" value="ej. pochoclo" required>
+        <br><br>
+        <fieldset>
             <label for="descripcion">Seleccioná lo que mas describe a tu mich:3</label><br>
-            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito" value="cariño"/>Cariñoso</label><br>
-            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito" value="manipulador"/>Manipulador</label><br>
-            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito" value="agil"/>Agil</label><br>
-            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito" value="suavecito"/>Suavecito</label><br>
-           </fieldset>
-           <br><br>
-           <label for="can"><h3>Describi a tu canino en pocas palabras</h3></label>
-           <input id="can" type="text" width="200" name="can" value="Escriba aqui..">
-           <button type="button" id="bottom">Enviar</button>
-           <button type="button" id="bottom">Rehacer</button>
-        </form>
-    </body>
+            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito"
+                    value="cariño" />Cariñoso</label><br>
+            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito"
+                    value="manipulador" />Manipulador</label><br>
+            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito"
+                    value="agil" />Agil</label><br>
+            <label for="descripcion"><input type="radio" id="descripcion" name="cariñoso-manipulador-agil-suavecito"
+                    value="suavecito" />Suavecito</label><br>
+        </fieldset>
+        <br><br>
+        <label for="can">
+            <h3>Describi a tu canino en pocas palabras</h3>
+        </label>
+        <input id="can" type="text" width="200" name="can" value="Escriba aqui..">
+        <button type="button" id="bottom">Enviar</button>
+        <button type="button" id="bottom">Rehacer</button>
+    </form>
+    <footer class="footer">
+        <figure>
+            <img class="logo footer" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
+        </figure>
+        <h3>Veterinaria Olmos</h3>
+            <h4>Nosotros</h4>
+            <h4>Productos</h4>
+            <h4>Servicos</h4>
+        
+
+        <ul class="footer lista">
+            <li>Quienes somos</li>
+            <li>Historia</li>
+            <li>Ubicacion</li>
+        </ul>
+
+        <ul class="footer lista">
+            <li>Alimentos</li>
+            <li>Arneses</li>
+            <li>Juguetes</li>
+            <li>Rascadores</li>
+        </ul>
+
+        <ul class="footer lista">
+            <li>Veterinaria</li>
+            <li>Peluqueria</li>
+        </ul>
+        <button class="butonn footer" type="button" id="bottom">Pedir turno</button>
+
+        <hr>
+        <h5>Nuestras redes:</h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

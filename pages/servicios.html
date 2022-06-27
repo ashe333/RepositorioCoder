@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Veterinaria Olmos</title>
     <link rel="stylesheet" href="../css/styles.css" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,25 +22,30 @@
         <figure>
             <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
         </figure>
-
-        <nav class="nav">
-            <ul id="menu">
-                <a href="./pages/inicio.html">
-                    <li>Inico</li>
-                </a>
-                <a href="./pages/">
-                    <li>Servicos</li>
-                </a>
-                <a href="./pages/sobrenosotros.html">
-                    <li>Sobre nosotros</li>
-                </a>
-                <a href="./pages/productos.html">
-                    <li>Productos</li>
-                </a>
-                <a href="./pages/contacto.html">
-                    <li>Contacto</li>
-                </a>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <h2>Servicios</h2>
@@ -54,36 +62,70 @@
         se sienta bien. El aseo regular también puede ayudar en la prevención y
         detección temprana de infecciones y enfermedades en la piel antes de que se
         conviertan en un problema grave</p>
-        <h5>Perros:</h5>
-        <ul>
-            <li>Peluqueria para toda raza</li>
-            <li>Perfume en caso de que se solicite</li>
-            <li>Corte de uñas</li>
-            <li>Limpieza de oidos</li>
-            <li>Expresion de la glandula anal (a peticion)</li>
-            <li>Desanudado(cargo adicional)</li>
+    <h5>Perros:</h5>
+    <ul>
+        <li>Peluqueria para toda raza</li>
+        <li>Perfume en caso de que se solicite</li>
+        <li>Corte de uñas</li>
+        <li>Limpieza de oidos</li>
+        <li>Expresion de la glandula anal (a peticion)</li>
+        <li>Desanudado(cargo adicional)</li>
+    </ul>
+    <h5>Gatos:</h5>
+    <p>Los gatos también pueden recibir una atención especial en cuanto a su aseo
+        personal. Algunas razas como por ejemplo los persas, tienen un manto muy
+        abundante y puede requerir algún corte higiénico en caso que usted lo desee.
+        Debido al comportamiento temeroso de los felinos frente a los ruidos (turbina,
+        peladora) puede requerir de una sedación para que el procedimiento sea
+        comfortable. Este sera llevado a cabo por un profesional veterinario</p>
+    <h2>La importancia de asear a su mascota</h2>
+    <p>Ser magnífico requiere trabajo. Pero hay mucho más que un baño para hacer
+        que Roco se vea fabuloso. Lo importante es mantener a tu perro o gato limpio
+        y saludable.
+        La higiene es una parte fundamental de la atención médica preventiva, y el
+        baño regular en unestra clínica veterinaria ayudará a prevenir problemas
+        dermatológicos graves, sin mencionar que su mascota se verá, olerá y sentirá
+        mejor. Al bañar a su mascota con regularidad, puede ayudar a detectar
+        infecciones y crecimientos en la piel antes de que se conviertan en un
+        problema.
+        Ofrecemos servicios de baño y corte de uñas para nuestros pacientes felinos y
+        caninos en nuestra clínica.</p>
+    <h4>Horarios</h4>
+    <footer class="footer">
+        <figure>
+            <img class="logo footer" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
+        </figure>
+        <h3>Veterinaria Olmos</h3>
+            <h4>Nosotros</h4>
+            <h4>Productos</h4>
+            <h4>Servicos</h4>
+        
+
+        <ul class="footer lista">
+            <li>Quienes somos</li>
+            <li>Historia</li>
+            <li>Ubicacion</li>
         </ul>
-        <h5>Gatos:</h5>
-        <p>Los gatos también pueden recibir una atención especial en cuanto a su aseo
-            personal. Algunas razas como por ejemplo los persas, tienen un manto muy
-            abundante y puede requerir algún corte higiénico en caso que usted lo desee.
-            Debido al comportamiento temeroso de los felinos frente a los ruidos (turbina,
-            peladora) puede requerir de una sedación para que el procedimiento sea
-            comfortable. Este sera llevado a cabo por un profesional veterinario</p>
-            <h2>La importancia de asear a su mascota</h2>
-            <p>Ser magnífico requiere trabajo. Pero hay mucho más que un baño para hacer
-                que Roco se vea fabuloso. Lo importante es mantener a tu perro o gato limpio
-                y saludable.
-                La higiene es una parte fundamental de la atención médica preventiva, y el
-                baño regular en unestra clínica veterinaria ayudará a prevenir problemas
-                dermatológicos graves, sin mencionar que su mascota se verá, olerá y sentirá
-                mejor. Al bañar a su mascota con regularidad, puede ayudar a detectar
-                infecciones y crecimientos en la piel antes de que se conviertan en un
-                problema.
-                Ofrecemos servicios de baño y corte de uñas para nuestros pacientes felinos y
-                caninos en nuestra clínica.</p>
-                <h4>Horarios</h4>
-                
+
+        <ul class="footer lista">
+            <li>Alimentos</li>
+            <li>Arneses</li>
+            <li>Juguetes</li>
+            <li>Rascadores</li>
+        </ul>
+
+        <ul class="footer lista">
+            <li>Veterinaria</li>
+            <li>Peluqueria</li>
+        </ul>
+        <button class="butonn footer" type="button" id="bottom">Pedir turno</button>
+
+        <hr>
+        <h5>Nuestras redes:</h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -99,9 +99,12 @@ p {
 /*---FOOTER------*/
 .footer {
     background-color: rgb(52, 52, 128);
-    height: 300px;
 
-    display: grid;
+}
+
+.logo footer{
+    width: 50px;
+    height: 60px;
 
 }
 
@@ -150,16 +153,18 @@ figure {
     display: grid;
 
 }
+
 .section {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: row;
+    justify-content: flex-start;
       
 }
 
 
 .clinicaVet{
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     border: solid black 5px;
     border-radius: 80px;
 }
@@ -168,25 +173,3 @@ figure {
 
 }
 
-/*
-.articuloA {
-    border: solid black;
-    grid-area: articuloA;
-
-}
-
-.articuloB {
-    border: solid black;
-    grid-area: articuloB;
-}
-
-.articuloC {
-    border: solid black;
-    grid-area: articuloC;
-}
-
-.articuloD {
-    border: solid black;
-
-    grid-area: articuloD;
-} */

@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Veterinaria Olmos</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
 </head>
 
 <body>
+    <!-----HEADER------->
     <header class="header">
         <main class="main">
             <h3 class="titulo">Veterinaria olmos</h3>
@@ -20,25 +25,30 @@
             <img class="logo" src="./images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
         </figure>
 
-            <nav class="nav">
-                <ul id="menu">
-                    <a href="./pages/inicio.html">
-                        <li>Inico</li>
-                    </a>
-                    <a href="./pages/servicios.html">
-                        <li>Servicos</li>
-                    </a>
-                    <a href="./pages/sobrenosotros.html">
-                        <li>Sobre nosotros</li>
-                    </a>
-                    <a href="./pages/productos.html">
-                        <li>Productos</li>
-                    </a>
-                    <a href="./pages/contacto.html">
-                        <li>Contacto</li>
-                    </a>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
                 </ul>
-            </nav>
+              </div>
+            </div>
+          </nav>
     </header>
 
 
@@ -114,13 +124,13 @@
     </section>
 
     <section class="section">
-    <figure>
-        <img class="clinicaVet" src="./images/clinicavet.jpg" alt="clinica">
-    </figure>
-    <h3 id="clinic">Clinica Veterinaria</h3>
-    <p class="parrafo">Porque quiere a su mascota y sabemos que una salud fuerte es
-        imprescindible para que viva feliz, en Veterinaria Olmos tenemos todo lo
-        necesario para cuidar de los que más quiere.</p>
+        <figure>
+            <img class="clinicaVet" src="./images/clinicavet.jpg" alt="clinica">
+        </figure>
+        <h2 id="clinic">Clinica Veterinaria</h2>
+        <p class="parrafo">Porque quiere a su mascota y sabemos que una salud fuerte es
+            imprescindible para que viva feliz, en Veterinaria Olmos tenemos todo lo
+            necesario para cuidar de los que más quiere.</p>
     </section>
 
     <p id="id">En veterinaria olmos contamos con los mejores Médicos Veterinarios con
@@ -142,16 +152,38 @@
             <img class="logo footer" src="./images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
         </figure>
         <h3>Veterinaria Olmos</h3>
-        <ul class="footer__lista">
-            <li>Nosotros</li>
-            <li>Productos</li>
-            <li>Servicos</li>
-            <hr>
+            <h4>Nosotros</h4>
+            <h4>Productos</h4>
+            <h4>Servicos</h4>
+        
+
+        <ul class="footer lista">
+            <li>Quienes somos</li>
+            <li>Historia</li>
+            <li>Ubicacion</li>
         </ul>
 
-        <ul></ul>
+        <ul class="footer lista">
+            <li>Alimentos</li>
+            <li>Arneses</li>
+            <li>Juguetes</li>
+            <li>Rascadores</li>
+        </ul>
+
+        <ul class="footer lista">
+            <li>Veterinaria</li>
+            <li>Peluqueria</li>
+        </ul>
+        <button class="butonn footer" type="button" id="bottom">Pedir turno</button>
+
+        <hr>
+        <h5>Nuestras redes:</h5>
     </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+    crossorigin="anonymous"></script>
+  </body>
 </body>
 
 </html>
