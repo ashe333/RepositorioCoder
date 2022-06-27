@@ -1,52 +1,51 @@
 /*------HEADER---------*/
 
 body {
-    background-color: darkseagreen;
+    background-color: rgb(136, 182, 136);
 }
 
 header {
-    background-color: rgb(132, 132, 198);
+    background-color: fuchsia ;
     border-color: black;
     border-style: dotted;
-    
+    width: 1200px;
 
     display: grid;
     grid-template-columns: 1000px 500px;
     grid-template-rows: 150px 80px;
     grid-template-areas: "titulo logo" "menu menu";
 }
+.animate__animated.animate__bounce {
+    --animate-duration: 3s;
+  }
 
 .logo {
     width: 150px;
     height: 150px;
     border: solid black 4px;
     border-radius: 80px;
+    transition: width 20s;
     grid-area: logo;
 }
 
-#menu {
-    list-style-type: none;
-
-    background-color: dodgerblue;
-    border: solid 2px rgb(52, 52, 128);
-    width: 100%;
-    padding: 20px 15px 20px 15px;
-
-    display: flex;
-
-    flex-flow: row;
-    align-content: space-around;
-    justify-content: space-evenly;
-
-    grid-area: menu;
-    justify-items: center;
-
+@keyframes animacion1 {
+    0%{ width: 700px; }
+    25%{ width: 800px; }
+    50%{ width: 600px ;
+    background-color: rgb(66, 106, 216); }
+    75%{ width: 700px;}
+    100%{ width: 600px;
+    background-color:rgb(143, 242, 78);}
 }
-
 .imgUno {
     width: 800px;
     height: 400px;
-    align-content: center;
+    background-color: green;
+    animation-name: animacion1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
 }
 
 @media (max-width: 480px) {
@@ -96,15 +95,27 @@ p {
     text-align: center;
 }
 
-/*---FOOTER------*/
-.footer {
-    background-color: rgb(52, 52, 128);
+#foto4 {
+    border:black dashed;
+    box-shadow: offset-x cornflowerblue;
+}
 
+/*---FOOTER------*/
+footer {
+    background-color: rgb(85, 85, 185);
+
+    display: grid;
+    grid-template-columns: 200px repeat(3, 1fr);
+    grid-template-rows: 180px 120px;
+    grid-template-areas: "logoTitulo productos nosotros servicios"
+    "redes boton";
 }
 
 .logo footer{
     width: 50px;
     height: 60px;
+
+    grid-area: logoTitulo;
 
 }
 
@@ -136,8 +147,8 @@ figure {
 
     grid-template-columns: 650px 650px;
     grid-template-rows: 200px 200px;
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 10px;
+    row-gap: 10px;
 
 }
 
