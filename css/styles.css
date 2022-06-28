@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: rgb(132, 132, 198);
+    background: linear-gradient(rgb(40, 89, 179), rgb(33, 179, 33), rgb(224, 103, 123));
     border-color: black;
     border-style: dotted;
     
@@ -15,7 +15,12 @@ header {
     grid-template-rows: 150px 80px;
     grid-template-areas: "titulo logo" "menu menu";
 }
-
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: left;
+     color:chartreuse;
+}
 .logo {
     width: 150px;
     height: 150px;
@@ -46,7 +51,21 @@ header {
 .imgUno {
     width: 800px;
     height: 400px;
+    align-items: center;
+    justify-items: center;
+}
+#p {
+    color:aliceblue;
+    font-size: 28px;
+    width: 1350px;
+    height: 420px;
+    background:linear-gradient(rgb(40, 40, 131), rgb(106, 67, 178), rgb(137, 30, 48) );
     align-content: center;
+    justify-content: center;
+}
+@keyframes animacion1 {
+
+    
 }
 
 @media (max-width: 480px) {
@@ -71,7 +90,7 @@ header {
 /*------INICIO------*/
 
 .titulo {
-    color: blueviolet;
+    color: rgb(39, 6, 70);
 
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -91,7 +110,7 @@ p {
 }
 
 .titulo__clinica--somos {
-    font-size: 29px;
+    font-size: 40px;
     color: rgb(52, 52, 128);
     text-align: center;
 }
@@ -99,6 +118,9 @@ p {
 /*---FOOTER------*/
 .footer {
     background-color: rgb(52, 52, 128);
+    display: grid;
+    grid-template-columns: wrap;
+
 
 }
 
@@ -108,7 +130,7 @@ p {
 
 }
 
-.footer__lista {
+.footerlista {
     color: blanchedalmond;
 
     list-style-type: none;
@@ -130,12 +152,14 @@ figure {
     border: solid 1px black;
     background-color: rgb(132, 132, 198);
     */
-    text-align: left;
+    text-align: center;
+    margin: 3vw 3vh;
+    
 
     display: grid;
 
     grid-template-columns: 650px 650px;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 250px 250px;
     column-gap: 5px;
     row-gap: 5px;
 
@@ -143,6 +167,7 @@ figure {
 
 .butonn {
     width: 100px;
+    height: 50px;
     border: solid rgb(111, 20, 195);
     border-radius: 25%;
 }
