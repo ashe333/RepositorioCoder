@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <!----------------------------------------------->
+    <!------header-------------->
     <header class="header">
         <main class="main">
             <h3 class="titulo">Veterinaria olmos</h3>
@@ -22,7 +24,9 @@
         <figure>
             <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
         </figure>
-        <nav class="navbar navbar-expand-lg bg-light">
+
+        <!------------------------NAV------------>
+        <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -40,76 +44,137 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/productos.html">Productos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <h2>Servicios</h2>
-    <section class="row">
-    <figure>
-        <img class="col-5 clinicaVet" src="../images/clinicavet.jpg" alt="clinica">
-    </figure>
-    <div class="col-md-3 offset-md-3">
-    <h5>Creemos que identificar y aliviar el dolor es esencial para la
-        recuperación de su mascota.</h5>
-    <ul>
-        <li>Cirujias</li>
-        <li>Ecografias</li>
-        <li>Castraciones</li>
-    </ul>
-    <button class="butonn3" type="button" id="bottom__h3">Leer más</button>
-    </div>
-    </section>
-    <h1>Peluqueria para perros y gatos</h1>
-    <p class="row col-5">La peluquería es una parte importante de la atención regular de la salud de su
-        mascota y una excelente manera de que su compañero tan querido se vea y
-        se sienta bien. El aseo regular también puede ayudar en la prevención y
-        detección temprana de infecciones y enfermedades en la piel antes de que se
-        conviertan en un problema grave</p>
-        <section class="row">
-    <h5 class="col-4">Perros:</h5>
-    <ul>
-        <li>Peluqueria para toda raza</li>
-        <li>Perfume en caso de que se solicite</li>
-        <li>Corte de uñas</li>
-        <li>Limpieza de oidos</li>
-        <li>Expresion de la glandula anal (a peticion)</li>
-        <li>Desanudado(cargo adicional)</li>
-    </ul>
-    <figure>
-        <img src="../images/peluqueria.jpg" alt="peluqueria">
-    </figure>
-    </section>
-    <h5>Gatos:</h5>
-    <p>Los gatos también pueden recibir una atención especial en cuanto a su aseo
-        personal. Algunas razas como por ejemplo los persas, tienen un manto muy
-        abundante y puede requerir algún corte higiénico en caso que usted lo desee.
-        Debido al comportamiento temeroso de los felinos frente a los ruidos (turbina,
-        peladora) puede requerir de una sedación para que el procedimiento sea
-        comfortable. Este sera llevado a cabo por un profesional veterinario</p>
+
+    <!--------------------------comienzo de seccion--------->
+    <h2 class="text-center m-2 fs-1">Servicios</h2>
+
+    <section class="container-fluid sectionServicios shadow-lg p-3 mb-5 bg-body rounded">
         <figure>
-            <img src="../images/peluqueria-para-gatos.jpg" alt="gatos">
+            <img class="align-content-start justify-content-start imgClinic" src="../images/clinicavet.jpg"
+                alt="clinica">
         </figure>
-    <h2>La importancia de asear a su mascota</h2>
-    <p>Ser magnífico requiere trabajo. Pero hay mucho más que un baño para hacer
+        <h5 class="text text-center mt-5">Creemos que identificar y aliviar el dolor es esencial para la
+            recuperación de su mascota.</h5>
+        <ul class="align-content-end lista">
+            <li>Cirujias</li>
+            <li>Ecografias</li>
+            <li>Castraciones</li>
+        </ul>
+        <button class="butonn d-flex align-items-end flex-column mb-3 mt-auto p-2" type="button" id="bottom__h3">Leer
+            más</button>
+    </section>
+
+    <!--------------------------------------->
+    <section class="secttionPeluqueria container-fluid shadow-lg p-3 mb-5 bg-body rounded">
+        <h1 class="text-start fs-1 h1 p-2">Peluqueria para perros y gatos</h1>
+        <p class="texto text-start fs-5 p-2">La peluquería es una parte importante de la atención regular de la salud de
+            su
+            mascota y una excelente manera de que su compañero tan querido se vea y
+            se sienta bien. El aseo regular también puede ayudar en la prevención y
+            detección temprana de infecciones y enfermedades en la piel antes de que se
+            conviertan en un problema grave</p>
+        <h5 class="h5 mt-5 p-2">Perros:</h5>
+        <ul class="ul px-3 pt-1">
+            <li>Peluqueria para toda raza</li>
+            <li>Perfume en caso de que se solicite</li>
+            <li>Corte de uñas</li>
+            <li>Limpieza de oidos</li>
+            <li>Expresion de la glandula anal (a peticion)</li>
+            <li>Desanudado(cargo adicional)</li>
+        </ul>
+        <figure>
+            <img class="imgP" src="../images/peluqueria.jpg" alt="peluqueria">
+        </figure>
+    </section>
+
+    <!------------------------->
+    <!---seccion gatos-->
+    <section class="sectionGatos container-fluid shadow-lg p-3 mb-5 bg-body rounded">
+        <h5 class="h55 px-2">Gatos:</h5>
+        <p class="pGatos p-2 text-start">Los gatos también pueden recibir una atención especial en cuanto a su aseo
+            personal. Algunas razas como por ejemplo los persas, tienen un manto muy
+            abundante y puede requerir algún corte higiénico en caso que usted lo desee.
+            Debido al comportamiento temeroso de los felinos frente a los ruidos (turbina,
+            peladora) puede requerir de una sedación para que el procedimiento sea
+            comfortable. Este sera llevado a cabo por un profesional veterinario</p>
+        <figure>
+            <img class="imgMichi" src="../images/peluqueria-para-gatos.jpg" alt="gatos">
+        </figure>
+    </section>
+
+<!------------------------------------------------------------>
+<article class="contenedor p-5 m-3">
+    <h1 class="text-danger text-center">La importancia de asear a su mascota</h1>
+    <hr>
+    <p class="pServicios px-6">Ser magnífico requiere trabajo. Pero hay mucho más que un baño para hacer
         que Roco se vea fabuloso. Lo importante es mantener a tu perro o gato limpio
-        y saludable.
+        y saludable.<br><br>
         La higiene es una parte fundamental de la atención médica preventiva, y el
         baño regular en unestra clínica veterinaria ayudará a prevenir problemas
         dermatológicos graves, sin mencionar que su mascota se verá, olerá y sentirá
         mejor. Al bañar a su mascota con regularidad, puede ayudar a detectar
-        infecciones y crecimientos en la piel antes de que se conviertan en un
-        problema.
-        Ofrecemos servicios de baño y corte de uñas para nuestros pacientes felinos y
-        caninos en nuestra clínica.</p>
-    <h4>Horarios</h4>
-    <footer class="row footer">
+        infecciones y crecimientos en la piel antes de que se conviertan en un problema.</p>
+<br><br>
+<h3 class="fs-3 text-center ">Pedir turno</h3>
+        <!-----------------------FORMULARIO----------------->
+
+        <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label">Usuario</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault04" class="form-label">Tipo de servicio</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Seleccione un servicio...</option>
+                <option>Peluqueria canina</option>
+                <option>Peluqueria para gatos</option>
+                <option>Consulta vet.</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault05" class="form-label">Codigo postal</label>
+              <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Estoy de acuerdo con los terminos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+
+        </article>
+
+    <!---------------FOOTER----------------------------->
+    <footer class="container-fluid row p-3 shadow-lg p-3 mt-5 bg-body rounded futer">
         <figure class="col-5">
-            <img class="logo footer" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
+            <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
         </figure>
         <h3 class="col-6">Veterinaria Olmos</h3>
         <h4 class="col-4">Nosotros</h4><br>
@@ -133,10 +198,15 @@
         <ul class="col-4 footer lista">
             <li>Veterinaria</li>
             <li>Peluqueria</li>
-        </ul><hr>
-
-        <h5 class="col-3">Nuestras redes:</h5>
-        <button class="col-4 butonn footer" type="button" id="bottom">Pedir turno</button>
+        </ul>
+        <hr>
+        <div class="col-7" id="iconos">
+            <h5>Nuestras redes</h5>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+        <button class="col-3 butonn footer" type="button" id="bottom">Pedir turno</button>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

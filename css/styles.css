@@ -34,6 +34,7 @@ h2 {
 .carousel-inner {
     max-height: 35rem;
     padding-top: 2vw;
+    object-fit: cover;
 }
 
 #p {
@@ -97,7 +98,7 @@ p {
 }
 
 .titulo__clinica--somos {
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(52, 52, 128);
     text-align: center;
 }
@@ -107,7 +108,7 @@ figure {
 }
 
 #h1 {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
     color: rgb(46, 16, 106);
 
@@ -143,11 +144,13 @@ figure {
 
 /*---------SECCION----*/
 .section {
+    background-color: rgb(115, 76, 193) !important;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 200px);
 
 
+    object-fit: cover;
 }
 
 .imgClinica {
@@ -175,6 +178,7 @@ figure {
 
 /*---------seccion2--------*/
 .section2 {
+    background-color: rgb(115, 76, 193) !important;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 200px);
@@ -206,15 +210,12 @@ figure {
 }
 
 /*----------------PET SHOP----------*/
-.pet {
-    justify-content: stretch;
+div > img{
+    width: 100%;
+    height: 100%;
 }
-
-.butonn3 {
-    width: 50px;
-    height: 50px;
-    border: solid rgb(111, 20, 195);
-    border-radius: 40%;
+.pet {
+    object-fit: cover;
 }
 
 /*---------------FOOTER---------------*/
@@ -240,5 +241,191 @@ ul.col-4.footer.lista {
 
 #iconos {
     font-size: 26px;
+
+}
+
+/*-----------SECCION SERVICIOS---------------------------*/
+
+.sectionServicios{
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 200px);
+
+    width: 100%;
+
+}
+.imgClinic{
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+.text{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.lista{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/*-----------peluqueria seccion-------*/
+.secttionPeluqueria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 200px 80px 150px;
+}
+
+.h1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.texto{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.h5{
+    grid-row: 3/4;
+    grid-column:1/2;
+}
+.ul{
+    grid-row: 4/5 ;
+    grid-column: 1/2;
+    list-style-type:armenian;
+}
+
+.imgP{
+    width: 100%;
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+/*------------------*/
+
+.sectionGatos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 320px;
+}
+.imgMichi{
+    width: 100%;
+    
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.h55{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.pGatos{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+/*---------------------*/
+
+.contenedor{
+    background-color: rgb(197, 145, 246);
+    border: solid rgb(80, 7, 80);
+    border-radius: 5px;
+}
+.form{
+    width: 25%;
+}
+
+/*-----------------------------------------*/
+/*-------MEDIA QUARES*/
+
+@media  screen and (max-width:576px) {
+    body{
+        background-color: rgb(162, 162, 245);
+    }
+    header{
+        width: 400px !important;
+        border-style: none !important;
+        justify-items: start;
+        justify-content: start;
+    }
+    .pp{
+        font-size: 20px;
+
+        width: 450px !important;
+    }
+    .carouselslide{
+        width: 400px;
+    }
+    .titulo__clinica--somos{
+        font-size: 30px;
+        text-align: left;
+    }
+    #p{
+        width: 500px;
+        font-size: 19px;
+    }
+    #h1 {
+        font-size: 30px;
+        text-align: center;
+        width: 450px;
+        padding-left: 1px;
+    }
+    .item {
+        width: 500px;
+        position: relative;
+        text-align: center;
+       padding: 2vw;
+
+    }
+    .articulo {
+        display: grid;
+        grid-template-columns: 380px;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .section {
+        display: block;
+        width: 390px !important;
+        align-items: stretch;
+    }
+    .imgClinica{
+        width: 100%;
+    }
+
+    .section2{
+        display: block;
+        width: 380px;
+    }
+    .horarios{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(2, 100px) !important;
+    }
+    .h555{
+        width: 100% !important;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .boton1{
+        width: 130px !important;
+        height: 50px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .boton{
+        width: 130px !important;
+        height: 50px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header{
+        width: 600px !important;
+        justify-items: start;
+    }
+    .pp {
+        width: 800px !important;
+    }
 
 }
