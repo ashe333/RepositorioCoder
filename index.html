@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Veterinaria Olmos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-    crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
+    <!------------------------------->
     <!-----HEADER------->
-    <header class="header">
+    <header class="header container-fluid">
         <main class="main">
             <h3 class="titulo">Veterinaria olmos</h3>
             <h1 class="titulo__clinica">Clinica veterinaria</h1>
@@ -25,38 +26,81 @@
             <img class="logo" src="./images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
         </figure>
 
+        <!---------------------------------->
+        <!---------NAV-------->
+
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Inicio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Servicios</a></li>
+                    <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                    <li><a class="dropdown-item" href="#">Productos</a></li>
                 </ul>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
+    <p class="bg-primary bg-opacity-25 p-5 m-3">En veterinaria olmos contamos con los mejores Médicos Veterinarios con
+        formación académica de calidad para ofrecerles las herramientas necesarias
+        para cuidar de tu mascota.
+        Consultá todas nuestras sucursales de hospitales veterinarios y
+        visítanos para poder ayudarte y ayudar a tu compañero.<br>¡Solicitá turno!</p>
+    <!----------------------------->
+    <!--CARROUSEL DE IMAGENES-->
 
-    <figure>
-        <img class="imgUno" src="./images/convivencia-perros-gatos-1200x675.jpg">
-    </figure>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="./images/convivencia-perros-gatos-1200x675.jpg" class="d-block w-100" alt="convicencia">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="./images/clinicavet.jpg" class="d-block w-100" alt="clinica">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="./images/peluqueria-para-gatos.jpg" class="d-block w-100" alt="peluqueria para gatos">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-    <h1 class="titulo__clinica--somos"><strong>¿Quienes somos?</strong></h1>
+    <!-------------------------------------------------------------------->
+    <!-----------Inicio de pagina------------------------->
+    <h1 class="titulo__clinica--somos m-3"><strong>¿Quienes somos?</strong></h1>
 
     <p id="p">Durante más de tres décadas, Clínica Veterinaria Olmos se ha esforzado por mantener
         nuestra práctica como el principal hospital veterinario de
@@ -83,6 +127,7 @@
 
         <article class="articulo">
 
+            <!------secciones----------->
             <div class="item">
                 <h3>Un poco de historia</h3>
                 <p class="textt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -123,40 +168,67 @@
         </article>
     </section>
 
-    <section class="section">
+    <!-------otra seccion-------------->
+    <section class="container-fluid section shadow p-3 mb-5 bg-body rounded">
         <figure>
-            <img class="clinicaVet" src="./images/clinicavet.jpg" alt="clinica">
+            <img class="align-content-start justify-content-start imgClinica" src="./images/clinicavet.jpg"
+                alt="clinica">
         </figure>
-        <h2 id="clinic">Clinica Veterinaria</h2>
+        <h2 class="align-content-center justify-content-center clinicaVet">Clinica Veterinaria</h2>
         <p class="parrafo">Porque quiere a su mascota y sabemos que una salud fuerte es
             imprescindible para que viva feliz, en Veterinaria Olmos tenemos todo lo
             necesario para cuidar de los que más quiere.</p>
     </section>
 
-    <p id="id">En veterinaria olmos contamos con los mejores Médicos Veterinarios con
-        formación académica de calidad para ofrecerles las herramientas necesarias
-        para cuidar de tu mascota.
-        Consultá todas nuestras sucursales de hospitales veterinarios y
-        visítanos para poder ayudarte y ayudar a tu compañero.<br>¡Solicitá turno!</p>
+    <!------------------------------>
+    <section class="container-fluid mt-5 section2 shadow p-3 mb-5 bg-body rounded">
+        <figure>
+            <img class="align-content-start justify-content-start imgP" src="./images/peluqueria.jpg" alt="peluqueria">
+        </figure>
+        <h2 class="align-content-center justify-content-center peluqueria">Peluqueria para perros y gatos</h2>
+        <p class="parrafo2">En Veterinaria Olmos tenemos un especialista en peluquería canina.
+            Disponemos de la experiencia y herramientas para que su mascota se vea
+            fabulosa.</p>
+    </section>
 
+    <!----------------------------->
+    <!------Pet shop-->
+    <h2 class="text-center">Pet Shop</h2>
+    <p class="p3">Contamos con variedades de alimentos balanceados, rascadores, arneses
+        y mas juguetes para tu mascota!</p>
+    <div class="container-fluid row pet">
+        <img class="col-2 p-2 m-5" src="./images/img1.jpg" alt="img1">
+        <img class="col-2 p-2 m-5" src="./images/img2.jpg" alt="img2">
+        <img class="col-2 p-2 m-5" src="./images/img3" alt="img3">
+        <img class="col-2 p-2 m-5" src="./images/img5.jpg" alt="img4">
+        <img class="col-2 p-2 m-5" src="./images/img4" alt="img5">
+        <img class="col-2 p-2 m-5" src="./images/3D-Estuche-Serenex-SPRAY-Caninos_.jpg" alt="img6">
+        <img class="col-2 p-2 m-5" src="./images/74d2b25c60343eceb741a5b9afb0a1ec.jpg" alt="img7">
+        <img class="col-2 p-2 m-5"
+            src="./images/utensilios-y-productos-caninos-te-presentamos-los-imprescindibles-1.jpg" alt="img8">
+    </div>
 
-    <figure>
-        <img src="./images/descarga.jpg" width="300" />
-    </figure>
-    <br>
+    <!------------------------------------->
+    <!--------------HORARIOS-->
+    <div class="row bg-success m-3 p-5 text-dark bg-opacity-25">
+        <h5 class="col-6 fs-4">HORARIOS <br>Lunes a Viernes de 8hs a 20hs<br>Sabados y domingo 8 hs a 13hs<br>
+            Feriados hasta las 15hs</h5>
+            <button type="button" class="col-2 m-5 btn btn-info">Pedir turno</button>
+            <button type="button" class="col-2 m-5 btn btn-outline-info">Contactanos</button>
+    </div>
 
-    <hr>
-
-    <footer class="row footer">
+    <!--------------------------------------->
+    <!-----------FOOTER---------->
+    <footer class="container-fluid row p-3 shadow-lg p-3 mt-5 bg-body rounded futer">
         <figure class="col-5">
-            <img class="logo footer" src="./images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
+            <img class="logo" src="./images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
         </figure>
         <h3 class="col-6">Veterinaria Olmos</h3>
-            <h4 class="col-4">Nosotros</h4><br>
-            <h4 class="col-4">Productos</h4>
-            <h4 class="col-4">Servicos</h4>
-            
-        
+        <h4 class="col-4">Nosotros</h4><br>
+        <h4 class="col-4">Productos</h4>
+        <h4 class="col-4">Servicos</h4>
+
+
         <ul class="col-4 footer lista">
             <li>Quienes somos</li>
             <li>Historia</li>
@@ -174,16 +246,20 @@
             <li>Veterinaria</li>
             <li>Peluqueria</li>
         </ul>
-        <button class="col-7 butonn footer" type="button" id="bottom">Pedir turno</button>
-
         <hr>
-        <h5 class="col-3">Nuestras redes:</h5>
+<div class="col-7" id="iconos">
+        <h5>Nuestras redes</h5>
+<a href=""><i class="bi bi-facebook"></i></a>
+<a href=""><i class="bi bi-twitter"></i></a>
+<a href=""><i class="bi bi-instagram"></i></a>
+    </div>
+        <button class="col-3 butonn footer" type="button" id="bottom">Pedir turno</button>
     </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
-    crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>

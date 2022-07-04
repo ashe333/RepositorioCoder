@@ -8,19 +8,21 @@ header {
     background: linear-gradient(rgb(40, 89, 179), rgb(33, 179, 33), rgb(224, 103, 123));
     border-color: black;
     border-style: dotted;
-    
+
 
     display: grid;
     grid-template-columns: 1000px 500px;
     grid-template-rows: 150px 80px;
-    grid-template-areas: "titulo logo" "menu menu";
+    grid-template-areas: "titulo logo""menu menu";
 }
+
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     text-align: left;
-     color:chartreuse;
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    color: chartreuse;
 }
+
 .logo {
     width: 150px;
     height: 150px;
@@ -29,63 +31,48 @@ h2 {
     grid-area: logo;
 }
 
-#menu {
-    list-style-type: none;
-
-    background-color: dodgerblue;
-    border: solid 2px rgb(52, 52, 128);
-    width: 100%;
-    padding: 20px 15px 20px 15px;
-
-    display: flex;
-
-    flex-flow: row;
-    align-content: space-around;
-    justify-content: space-evenly;
-
-    grid-area: menu;
-    justify-items: center;
-
+.carousel-inner {
+    max-height: 35rem;
+    padding-top: 2vw;
 }
 
-.imgUno {
-    width: 800px;
-    height: 400px;
-    align-items: center;
-    justify-items: center;
-}
 #p {
-    color:aliceblue;
-    font-size: 28px;
+    color: aliceblue;
+    font-size: 25px;
     width: 1350px;
-    height: 420px;
-    background:linear-gradient(rgb(40, 40, 131), rgb(106, 67, 178), rgb(137, 30, 48) );
+    height: 400px;
+    padding: 2vw;
+    margin: 1vw;
+    background: linear-gradient(rgb(40, 40, 131), rgb(106, 67, 178), rgb(137, 30, 48));
     align-content: center;
     justify-content: center;
 }
-@keyframes animacion1 {
 
-    
-}
+@keyframes animacion1 {}
 
-@media (max-width: 480px) {
-    .header{
-        width: 300px;
-
+@media (min-width: 480px) {
+    .header {
         background-color: rgb(50, 50, 119);
         border-color: black;
         border-style: dotted;
     }
-    body{
-        background-color: rgb(21, 106, 61);
-
-    }
-    p{
-        text-align: center;
-        font-size: 15px;
-    }
-    
 }
+
+body {
+    background-color: rgb(21, 106, 61);
+
+}
+
+#p {
+    text-align: center;
+    font-size: 30pxpx;
+    padding: 2vw;
+
+}
+
+
+
+
 
 /*------INICIO------*/
 
@@ -115,46 +102,21 @@ p {
     text-align: center;
 }
 
-/*---FOOTER------*/
-.footer {
-    background-color: rgb(52, 52, 128);
-    display: grid;
-    grid-template-columns: wrap;
-
-
-}
-
-.logo footer{
-    width: 50px;
-    height: 60px;
-
-}
-
-.footerlista {
-    color: blanchedalmond;
-
-    list-style-type: none;
-    text-shadow: none;
-}
-
 figure {
     align-content: flex-start;
 }
 
 #h1 {
+    text-align: center;
     font-size: 40px;
     color: rgb(46, 16, 106);
 
 }
 
 .articulo {
-    /*
-    border: solid 1px black;
-    background-color: rgb(132, 132, 198);
-    */
     text-align: center;
     margin: 3vw 3vh;
-    
+
 
     display: grid;
 
@@ -169,7 +131,7 @@ figure {
     width: 100px;
     height: 50px;
     border: solid rgb(111, 20, 195);
-    border-radius: 25%;
+    border-radius: 40%;
 }
 
 .item {
@@ -179,22 +141,104 @@ figure {
 
 }
 
+/*---------SECCION----*/
 .section {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-      
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
 
-
-.clinicaVet{
-    width: 250px;
-    height: 250px;
-    border: solid black 5px;
-    border-radius: 80px;
-}
-.clinic{
-    text-align: right;
 
 }
 
+.imgClinica {
+    width: 600px;
+    height: 400px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.clinicaVet {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 20%;
+
+}
+
+.parrafo {
+    grid-area: clinicaVet parrafo;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    text-align: top center;
+}
+
+/*---------seccion2--------*/
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+
+
+}
+
+.imgP {
+    width: 600px;
+    height: 400px;
+    grid-column: 2/4;
+    grid-row: 2/-3;
+
+}
+
+.peluqueria {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 20%;
+
+}
+
+.parrafo2 {
+    grid-area: clinicaVet parrafo;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: top center;
+}
+
+/*----------------PET SHOP----------*/
+.pet {
+    justify-content: stretch;
+}
+
+.butonn3 {
+    width: 50px;
+    height: 50px;
+    border: solid rgb(111, 20, 195);
+    border-radius: 40%;
+}
+
+/*---------------FOOTER---------------*/
+.futer {
+    background-color: rgb(205, 255, 155);
+}
+
+.logo footer {
+    width: 50px;
+    height: 60px;
+
+}
+
+.footerlista {
+    color: blanchedalmond;
+
+    text-shadow: none;
+}
+
+ul.col-4.footer.lista {
+    list-style-type: none;
+}
+
+#iconos {
+    font-size: 26px;
+
+}
