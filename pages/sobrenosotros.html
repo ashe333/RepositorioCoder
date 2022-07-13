@@ -13,78 +13,112 @@
 </head>
 
 <body>
-    <header>
-        <main>
+
+    <!----------------------HEADER--------------------->
+    <header class="header container-fluid">
+        <main class="main">
             <h3 class="titulo">Veterinaria olmos</h3>
             <h1 class="titulo__clinica">Clinica veterinaria</h1>
             <br>
-            <figure>
-                <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
-            </figure>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">Inicio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../pages/servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
+        </main>
+        <figure>
+            <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="logo">
+        </figure>
+
+        <!---------------------------------->
+        <!---------NAV-------->
+
+        <nav class="navbar navbar-expand-lg bg-transparent fs-5 text-center d-flex justify-content-end">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Servicios</a></li>
+                    <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                    <li><a class="dropdown-item" href="#">Productos</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <h1>Somos una compañia diversa</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit taciti habitasse,
-        tellus feugiat curabitur tempus praesent lobortis mus inceptos duis nisi,
-        pulvinar primis ad dapibus urna auctor consequat purus. Ultricies diam venenatis
-        vehicula auctor dapibus imperdiet sodales molestie ultrices enim urna luctus primis
-        faucibus, ridiculus volutpat pretium tempus vel netus vitae natoque conubia mollis
-        potenti nascetur. Habitasse cras facilisi a potenti litora aptent molestie
-        habitant curae himenaeos praesent inceptos, pretium viverra ligula facilisis
-        netus mattis scelerisque blandit et montes ac egestas eu, ultricies orci dis lacus
-        id posuere lacinia urna felis risus mus.
+    <!-------------------------------------------------------------------->
+    <!-----------Inicio de pagina------------------------->
+    <h1 class="titulo__clinica--somos m-3"><strong>¿Quienes somos?</strong></h1>
+
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <p id="p">Durante más de tres décadas, Clínica Veterinaria Olmos se ha esforzado por mantener
+        nuestra práctica como el principal hospital veterinario de
+        la zona de Ciudadela. Con ese fin, nos comprometemos a brindarle a usted y a su mascota
+        los más altos estándares de atención médica y
+        servicio al cliente.<br><br>
+        La selección de un hospital veterinario no es una decisión pequeña. El personal
+        altamente calificado y trabajador en la clínica se enorgullece de
+        brindar un cuidado excelente y asequible para su mascota. Queremos lo mejor para
+        su mascota, pero también no perdemos de vista lo que es
+        mejor para usted. La comunicación con el cliente es muy importante para nosotros,
+        ya sea brindando opciones, respondiendo a todas las
+        preguntas o haciendo un seguimiento de cómo está su mascota. Confiamos en nuestra
+        capacidad para satisfacer sus necesidades y esperamos
+        que nos elija como su compañero de cuidado de mascotas.
+    </p>
+    </div>
+
+
+    <h2>Un poco de historia..</h2>
+
+    <div class="row container-fluid">
+    <p class="col-7">Nuestra clínica tiene una larga historia en Ciudadela, la misma se remonta a 30 años atrás cuando, siendo muy joven<br>
+        y apenas recibida, la Dra. María Cecilia Stanchi establece un consultorio médico 
+        veterinario en la intersección de la Av. Hipólito Irigoyen y Av. Gaona (Ciudadela).
+        Muchos años han pasado, muchos pacientes, propietarios de mascotas que ya son amigos de la clínica, y
+        gracias a todos ellos por la confianza depositada, hemos podido ampliar nuestros 
+        servicios para dar mayor comfort a nuestros clientes y responder a sus demandas de salud.
+        En el año 2007 la veterinaria Olmos se traslada a su actual dirección, en Av.Rivadavia 
+        2223 manteniendo la clientela existente y ampliandola. 
+        En los últimos años, hemos incorporado algunas especialidades a fin de brindar una 
+        atención de calidad, respondiendo a las necesidades 
+        médicas de nuestras queridas mascotas. Estos especialistas son en su mayoría docentes de 
+        la universidad,lo cual ratifica su permanente actualización en avances médicos.
     </p>
     <figure>
-        <img src="./imagenes/descarga.jpg" width="300" />
+        <img class="col-4 rounded-start-5" src="../images/descarga.jpg" width="300" />
     </figure>
+</div>
 
-    <h2>Con más de 20 años de experiencia</h2>
-    <p>El Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta
-        manera para permitir la presentación de elementos gráficos en documentos, sin
-        necesidad de una copia formal. El uso de Lorem Ipsum permite a los diseñadores
-        reunir los diseños y la forma del contenido antes de que el contenido se haya
-        creado, dando al diseño y al proceso de producción más libertad.
+<!------------SECCION UBICACION-------------->
+<section class="ubicacion container-fluid">
+<figure>
+    <img class="rounded-pill" src="../images/mapa.jpggg.jpg" width="500px" alt="mapa">
+</figure>
 
-        Se cree ampliamente que la historia de Lorem Ipsum se origina con Cicerón en el
-        siglo I aC y su texto De Finibus bonorum et malorum. Esta obra filosófica, también
-        conocida como En los extremos del bien y del mal, se dividió en cinco libros.
-        El Lorem Ipsum que conocemos hoy se deriva de partes del primer libro Liber Primus
-        y su discusión sobre el hedonismo, cuyas palabras habían sido alteradas, añadidas y
-        eliminadas para convertirlas en un latín sin sentido e impropio. No se sabe
-        exactamente cuándo el texto recibió su forma tradicional actual. Sin embargo,
-        las referencias a la frase "Lorem Ipsum" se pueden encontrar en la Edición de la
-        Biblioteca Clásica Loeb de 1914 del De Finibus en las secciones 32 y 33. Fue en
-        esta edición del De Finibus en la que H. Rackman tradujo el texto. El siguiente
-        fragmento se selecciona de la sección 32:</p>
-        <footer class="row footer">
+<h2 class="ubicacionT text-info bg-dark">Ubicacion</h2>
+<p class="Ubi text-start"><strong>Nuestra clinica se encuentra actualmente <br>
+
+    sobre av. Rivadavia 2223 <br><br>
+    
+    Telefono: (+54) 11 2932-1567 </strong></p>
+</section>
+
+        <!-------FOOTER----------------------------------->
+        <footer class="container-fluid row p-3 shadow-lg p-3 mt-5 bg-body rounded futer">
             <figure class="col-5">
-                <img class="logo footer" src="./images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
+                <img class="logo" src="../images/modern-animal-pet-logo-template-free-vector.jpg" alt="">
             </figure>
             <h3 class="col-6">Veterinaria Olmos</h3>
             <h4 class="col-4">Nosotros</h4><br>
@@ -108,10 +142,15 @@
             <ul class="col-4 footer lista">
                 <li>Veterinaria</li>
                 <li>Peluqueria</li>
-            </ul><hr>
-    
-            <h5 class="col-3">Nuestras redes:</h5>
-            <button class="col-4 butonn footer" type="button" id="bottom">Pedir turno</button>
+            </ul>
+            <hr>
+    <div class="col-7" id="iconos">
+            <h5>Nuestras redes</h5>
+    <a href=""><i class="bi bi-facebook"></i></a>
+    <a href=""><i class="bi bi-twitter"></i></a>
+    <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+            <button class="col-3 butonn footer" type="button" id="bottom">Pedir turno</button>
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

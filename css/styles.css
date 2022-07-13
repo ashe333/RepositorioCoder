@@ -57,8 +57,7 @@ h2 {
         border-color: black;
         border-style: dotted;
     }
-}
-
+    
 body {
     background-color: rgb(21, 106, 61);
 
@@ -70,12 +69,7 @@ body {
     padding: 2vw;
 
 }
-
-
-
-
-
-/*------INICIO------*/
+/*------------------INICIO-----------------------*/
 
 .titulo {
     color: rgb(39, 6, 70);
@@ -429,3 +423,5 @@ ul.col-4.footer.lista {
     }
 
 }
+
+/*# sourceMappingURL=styles.css.map */

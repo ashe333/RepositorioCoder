@@ -1,0 +1,15 @@
+@mixin fontSize ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+h2{
+    @include fontSize(1rem, 100 );
+}
+
+.titulo__clinica{
+    @include fontSize(2rem, 100 );
+}
+.titulo__clinica--somos{
+    @include fontSize(1rem, 100 );
+}
