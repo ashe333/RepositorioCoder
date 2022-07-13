@@ -13,4 +13,14 @@ h2 {
   font-weight: 100;
 }
 
+.tarjeta, .tarjeta2 {
+  width: 2rem;
+  height: 4rem;
+  background-color: aquamarine;
+}
+
+.tarjeta2 {
+  color: aliceblue;
+}
+
 /*# sourceMappingURL=main.css.map */

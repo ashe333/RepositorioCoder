@@ -415,7 +415,8 @@ ul.col-4.footer.lista {
 
 @media screen and (max-width:768px) {
     header{
-        width: 600px !important;
+        width: 100% !important;
+        height: 15rem !important;
         justify-items: start;
     }
     .pp {

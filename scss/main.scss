@@ -6,3 +6,13 @@
 @import "map,mixin/mixin";
 
 
+.tarjeta{
+    width: 2rem;
+    height: 4rem;
+    background-color: aquamarine;
+}
+
+.tarjeta2{
+    @extend .tarjeta;
+    color: aliceblue;
+}
